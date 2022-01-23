@@ -1,0 +1,13 @@
+ <% if @alchool.favorited_by?(current_user) %>
+    <p>
+    <%= link_to alchool_favorites_path(@alchool), method: :delete do %>
+        ♥<%= @alchool.favorites.count %> いいね
+    <% end %>
+    </p>
+    <% else %>
+    <p>
+    <%= link_to alchool_favorites_path(@alchool), method: :post do %>
+        ♡<%= @alchool.favorites.count %> いいね
+    <% end %>
+    </p>
+<% end %>

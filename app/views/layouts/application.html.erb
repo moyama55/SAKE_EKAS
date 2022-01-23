@@ -10,6 +10,47 @@
   </head>
 
   <body>
+   <header class="sticky-top">
+      <nav class="navbar navbar-expand-md navbar-light bg-light text-black">
+        <a class=>
+          <%= link_to 'SAKE-EKAS', root_path, data: {"turbolinks" => false}, class: "header-logo"%><i class="fas fa-glass-cheers"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <% if user_signed_in? %>
+              <li class="nav-item">
+                <%= link_to "ホーム", user_path(current_user),class:"nav-item" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "ユーザー", users_path,class:"nav-item" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "投稿一覧", alchools_path,class:"nav-item" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "ログアウト", destroy_user_session_path,class:"nav-item" %>
+              </li>
+            <% else %>
+              <li class="nav-item">
+                <%= link_to "トップページ", "/",class: "nav-item" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "アバウト", about_path, class:"nav-item" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "新規登録", new_user_registration_path,class: "nav-item" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "ログイン", new_user_session_path,class: "nav-item" %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>

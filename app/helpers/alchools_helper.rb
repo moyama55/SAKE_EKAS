@@ -1,0 +1,2 @@
+module AlchoolsHelper
+end

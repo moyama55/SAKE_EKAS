@@ -1,0 +1,32 @@
+<h2 class="head">ログイン</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+   <table class="user_info user-form">
+    <thead>
+      <th></th>
+      <th></th>
+      <th></th>
+    </thead>
+    <tbody class="user-body">
+
+      <tr>
+        <td class="user-td"><%= f.label :name,"名前"%><i class="fas fa-glass-martini-alt"></i></td>
+        <td class="user-td"><%= f.text_field :name, autofocus: true %></td>
+      </tr>
+
+      <tr>
+        <td class="user-td"><%= f.label :password, "パスワード(#{@minimum_password_length}文字以上)" %><i class="fas fa-glass-whiskey"></i></td>
+        <td class="user-td",colspan="2"><%= f.password_field :password %></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td class="user-td",colspan="2"><%= f.submit "ログイン", class: "btn btn-primary" %></td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>
+
+<h2 class="section-ttl">登録がお済みでない方</h2>
+  <p><%= link_to "こちら", new_user_registration_path, class: "underline" %>から新規登録をしてください。</p>
+</section>
