@@ -26,7 +26,7 @@ class AlchoolsController < ApplicationController
   end
 
   def edit
-    @alchool = Alchool.find(params[:id])
+   @alchool = Alchool.find(params[:id])
   end
 
   def update
