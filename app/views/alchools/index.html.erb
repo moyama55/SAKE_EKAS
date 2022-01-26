@@ -30,11 +30,11 @@
         </tr>
       </thead>
     <tbody>
-      <%= @all_ranks.each.with_index(1) do |alchool,i| %>
+      <%@all_ranks.each.with_index(1) do |alchool,i| %>
       <tr>
         <td>第<%= i %>位</td>
         <td><%=alchool.title%></td>
-        <% end %>
+      <% end %>
       </tr>
     </tbody>
     </table>
