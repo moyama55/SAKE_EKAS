@@ -16,7 +16,11 @@
 おいしいお酒を飲んだ時に共有したい時、他人がおすすめするお酒を知りたい時、また普段あまりお酒を飲まない人たちに対してお酒を進めたい時。
 
 ## 設計書
-https://drive.google.com/drive/folders/1m_Scqk-bI5TLkcY-O2wuQuAmwUTCnUc_
+https://app.diagrams.net/#G1BH5m2hn0FLtu-PdWJ9NzDN7Xn3JWzLhK
+https://app.diagrams.net/#G1ebvCpj76CNm8ttxNxwmxefR3E_WZmqb9
+https://docs.google.com/spreadsheets/d/16YuyqNVmCVRj7qy7p5IcApVA2ovsZkyRQYI2B9gazRg/edit#gid=1373217982
+https://app.diagrams.net/#G1lCsjewjyaEG9wVvD6qW0lIfUWJ7hu8lG
+
 
 ## チャレンジ要素一覧
 https://docs.google.com/spreadsheets/d/1KFG_dyh6w1808HLgjhVhR14AZ-AztAR3wIMZbWUn-9w/edit#gid=0
